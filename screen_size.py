@@ -13,6 +13,8 @@ aspect_ratio = width / height
 
 print("Aspect ratio: %.2f" % aspect_ratio)
 
-portrait = (screen[-1], screen[-2])
+portrait = (screen[1], screen[0])
 
 print("Portrait:", portrait)
+
+#screen[0] cannot be changed because it's a tuple and tuples are immutable
