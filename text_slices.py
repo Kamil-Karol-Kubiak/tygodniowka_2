@@ -4,7 +4,7 @@ print("First five characters: %s" % sentence[:5])
 print("Last five characters: %s" % sentence[-5:])
 print("Every cecond character: %s" % sentence[::2])
 print("Reversed: %s" % sentence[::-1])
-print("Withount first and last character: %s" %sentence[1:-2])
+print("Withount first and last character: %s" %sentence[1:-1])
 
 length = len(sentence)
 
