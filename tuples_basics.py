@@ -20,3 +20,5 @@ print(x)
 print(y)
 
 point[0] = 2
+
+#We can't change the value of a tuple, because tuples are immutable
