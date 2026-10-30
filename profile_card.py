@@ -1,4 +1,3 @@
-x = 1
 for x in range(2):
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))
