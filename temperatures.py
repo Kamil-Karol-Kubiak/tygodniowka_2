@@ -31,3 +31,9 @@ for temperature in temperatures:
     if temperature > average:
         days_above_avg += 1
 print("Days above average: %d" % days_above_avg)
+
+fahrenheit = []
+for temperature in temperatures:
+    fahrenheit.append((temperature * 1.8) + 32)
+for i in range(len(days)):
+    print("%s: %.2f°F" % (days[i], fahrenheit[i]))
