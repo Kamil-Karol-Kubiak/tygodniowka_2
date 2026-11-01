@@ -19,14 +19,14 @@ for grade in grades:
 print("Passing grades: %d" % passing_grades)
 
 
-max = 0
+max = grades[0]
 for grade in grades:
     if grade > max:
         max = grade
 print("Highest: %d" % max)
 
 
-min = 100
+min = grades[0]
 
 for grade in grades:
     if grade < min:
