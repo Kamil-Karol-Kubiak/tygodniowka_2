@@ -57,3 +57,72 @@
 7. ostatni = lista.pop(); print(ostatni)
 8. print(lista.count("a"))
 9. lista.sort(); print(lista)
+
+## Task 3.2 Questions to investigate
+1. What is the difference between 'append()' and 'insert()'?
+    'append()' dodaje pozycję do listy na końcu listy, a 'insert()' na wybranej pozycji
+2. What happens if you try to remove a value that is not on the list?
+    Wyskoczy błąd z informacją o tym, że element nie znajduje się na liście
+3. Can a list contain values of different types?
+    Tak
+4. What is the difference between tasks and seconr_list after the last step?
+    Listy nie różnią się
+5. Does 'sort()' return a new list, or does it change the original one?
+    Zmienia ona oryginalną listę
+
+## Task 4.1 Research
+1. krotka = ("a", "b", "c")
+2. krotka = ("a",)
+3. print(krotka[0])
+4. len(krotka)
+5. Nie da się zmienić elementów krotki, ponieważ jest niemodalna
+6. Nie da się dodać elementów do krotki, ponieważ jest niemodalna
+7. x, y, z = krotka
+8. list(krotka), tuple(lista)
+
+## Taks 4.2 Questions to investigate
+1. What makes a tuple immutable?
+    Krotka jest niemutowalna, ponieważ jest to "lista" dla stałych wartości
+2. Why would you choose a tuple instead of a list?
+    Gdybym potrzebował przechować jakieś stałe wartości, których nie powinno się nadpisywać
+3. Why does '(5,)' contain one element, while '(5)' does not?
+    Ponieważ '(5,)' mówi o krotce, a zwykłe '(5)' mówi o jednej zmiennej i to jest tak samo jakbyśmy przypisali wartość '5' bez nawiasów
+4. Can a tuple contain a list? If so, can you change that list?
+    Krotka może posiadać w sobie listę i można ją modyfikować
+5. What happens when you pass a tuple to a 'len()'?
+    Wyświetla się liczba elementów krotki
+
+## Task 5.1 Research
+1. print(krotka[0])
+2. print(krotka[2])
+3. print(krotka[-1])
+4. print(krotka[-2])
+5. print(krotka[len(krotka) - 1])
+6. Element się nie wyświetli, bo indeksowanie zaczyna się od 0, a długość się liczy od 1
+7. a = 1; print(krotka[a])
+8. tekst = "Python"; print(tekst[0]); Zwróci: "P"
+
+## Task 5.2 Questions to investigate
+1. Why does Python start counting at 0?
+    Ponieważ komputer liczy odległości od początku danych od 0 i tak przyjęło się w językach programowania m. in. C, C++ i JS
+2. What is the last valid index for a sequence with n elements?
+    n - 1
+3. What is the name of the error coused by an index that is too large?
+    IndexError: tuple index out of range
+4. What is the difference between 'colors[1]' and 'colors[-1]'?
+    'colors[1]' to druga pozycja od początku krotki, a 'colors[-1]' to ostatnia
+5. Can you use an expression such as 'i + 1' as an index?
+    Tak
+6. Does indexing work the same way for strings and tuples?
+    Tak, w stringu kolejnymi indeksami są kolejne znaki 
+
+## Task 6.1 Research
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
