@@ -117,12 +117,88 @@
     Tak, w stringu kolejnymi indeksami są kolejne znaki 
 
 ## Task 6.1 Research
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
+1. lista[1:4]
+2. lista[:3]
+3. lista[-3:]
+4. lista[1:]
+5. lista[:-1]
+6. lista[::2]
+7. lista[::-1]
+8. lista[:]
+9. text = "Python"; text[2:3]; "th"
+
+## Task 6.2 Questions to investigate
+1. Is the 'stop' index included in the result?
+    Nie
+2. What does 'numbers[:]' return?
+    Każdą pozycję na liście
+3. Does slicing change the original list?
+    Nie
+4. What is the difference between 'numbers[2]' and 'numbers[2:3]'?
+    'numbers[2]' pokaże element listy o indeksie 2, a 'numbers[2:3]' pokaże od 2 do 3 indexu, ale bez uwzględnienia 3 indeksu
+5. What happens when 'start' or 'stop' is outside the sequence?
+    python tego nie uwzględni
+6. What does a negative step do?
+    Liczy indeksy od końca listy
+
+## Task 7.1
+1. elements = [1, 2, 3, 4, 5, 6]; for element in elements:
+2. elements = (1, 2, 3, 4, 5, 6); for element in elements:
+3. text = "Python"; for letter in text:
+4. for i in range(5):
+5. for i in range(1, 6):
+6. for i in range(2, 11, 2):
+7. for i in range(10): if i == 4: break
+8. for i in range(10): if i == 4: continue
+
+## Task 7.2 Questions to investigate
+1. What is the loop variable, and where does it come from?
+    Jest to zmienna, która przyjmuje kolejne wartości listy i tworzymy ją podczas pisania pętli for
+2. What happens when the sequence is empty?
+    Pętla nie wykonuje się ani razu
+3. What is a accumulatoro, and why must it be created before the loop?
+    Akumulator to zmienna, która ma za zadanie np. sumować liczby z pętli. Musi być stworzona przd pętlą, ponieważ jej wartośc zmienia się podczas każdego powtórzenia pętli
+4. How is a for loop different from a while loop?
+    Pętla for wykona się określoną liczbę razy, a while nie ma określinej liczby powtórzeń
+5. What does 'range(1, 10, 2)' produce?
+    Zmienna for obierze wartości od 1 do 10, ale co 2, czyli (1, 3, 5, 7, 9)
+6. What happens if you change a list while a for loop is iterating over it?
+    Może to spowodować różne nieoczekiwane wyniki, np. pominięcie elementu
+
+## Part 9 Questions to Answer
+1. What is the difference between a list and a tuple? When would you choose each one?
+    Lista jest mutowalna, a krotka nie. Wybrałbym krotkę do listy, której bym nie chciał przypadkowo nadpisać
+2. What does it mean that a tuple is immutable?
+    Oznacza to, że gdy przypisze się jej wartości to już ich nie moąna zmienić
+3. Why are sequence indices numbered from 0?
+    Indeksy zaczynają się od 0, ponieważ ułatwia do komputerom liczenie i uzyskiwanie dostępu do elementów. Jest to powszechnie przyjęta zasada w programowaniu
+4. What is the difference between indexing and slicing?
+    Indeksowanie odnosi się do konkretnego elementu, a 'cięcie' do fragmentu listy, np. od 2 do 6 indeksu
+5. Is the stop index included is a slice? Give an example.
+    Indeks zatrzymania nie jest wliczany do slce. Gdy damy w slice początek na 1, a koniec na 5 to wyświetlą się elementy 1-4
+6. What does 'sequence[::-1]' do?
+    Wyświetla elementy sequence od tyłu
+7. What is the difference between a for loop and a while loop?
+    Pętla for będzie wykonywać się odgórnie ustaloną liczbę razy, a pętla while nie
+8. What values does 'range(1, 10, 2)' produce?
+    1, 3, 5, 7, 9
+9. What happens when you use an index that is outside the sequence?
+    Wyświetli się error mówiący, że zmienna znajduje się poza zakresem
+10. Why must an accumulator be initialized before a loop?
+    Ponieważ jest zmienną stałą, która będzie przechowywać wynik operacji w pętli, np. zsumowanie wszystkich liczb na liście
+11. What does 'type()' tell you, and does it change the value it receives?
+    Pokazuje nam typ danych danego elementu, nie zmienienia ono wartości zmiennej
+12. What is the difference between 'int(3.75)' and 'round(3.75)'?
+    int odcina wszystko po przecinku, a round zaokrągla, więc int da w odpowiedzi 3, a round 4
+13. Give two examples of conversion that lose information and axplain what is lost.
+    int(5.75) - strata końcówki .75 bez zaokrąglenia, bool("tekst") - strata całego słowa i zamiana w wartość True
+14. Why does 'int("3.75")' fail while 'float("3.75")' works?
+    Ponieważ do 'int("3.75") są potrzebne 2 konwersje, a int wykonuje jedną
+15. Why is 'bool("0")' True?
+    Ponieważ "0" to string, a każdy string z wartością w środku przyjmuje wartość True
+16. What is the difference between 'print("Age:", age)' and 'print("Age: %d" % age)'?
+    'print("Age:", age)' wyświetla dwie wartości osobno, a 'print("Age: %d" % age)' skleja je w jednego stringa
+17. What does %s do when the value is not a string?
+    Zamienia wartość w stringa
+18. What happens when the number of % placeholders does not match the number of values?
+    Wyświetla się error, który mówi o zbyt małej lub zbyt dużej ilości zmiennych
